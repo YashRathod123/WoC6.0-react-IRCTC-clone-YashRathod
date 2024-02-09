@@ -16,7 +16,7 @@ function PayDetails({log,tid}){
       console.log(tid);
       console.log('Booked successfully :', { cardNumber, expirationMonth, expirationYear, cvv, country });
       try{
-        const response = await fetch("http://localhost:8000/book", {
+        const response = await fetch("https://woc-yash-server.onrender.com/book", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
