@@ -5,7 +5,7 @@ const cors = require("cors");
 const bodyParser = require("body-parser");
 const md5 = require("md5");
 const jwt = require("jsonwebtoken");
-const nodemailer = require('nodemailer');
+
 
 
 const port = 8000;
@@ -14,13 +14,7 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-const transporter = nodemailer.createTransport({
-  service: 'SendGrid',
-  auth: {
-    user: 'your-sendgrid-username',
-    pass: 'your-sendgrid-password',
-  },
-});
+
 
 
 app.post("/signup", async (req, res) => {
@@ -145,7 +139,7 @@ app.post("/booklist", async (req, res) => {
   } catch (err) {
     console.log("Error");
     
-    // console.error(err);
+    console.error(err);
   }
 });
 
