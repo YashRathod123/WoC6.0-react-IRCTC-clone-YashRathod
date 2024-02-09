@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./booklist.css"; 
 
 async function fetchBookList(username) {
-  const response = await fetch("http://localhost:8000/booklist", {
+  const response = await fetch("https://woc-yash-server.onrender.com/booklist", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -16,7 +16,7 @@ async function fetchBookList(username) {
 }
 async function handleDelete(tid, username) {
   try {
-    const response = await fetch("http://localhost:8000/delete-book", {
+    const response = await fetch("https://woc-yash-server.onrender.com/delete-book", {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
