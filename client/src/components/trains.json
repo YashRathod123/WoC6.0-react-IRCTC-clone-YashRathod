@@ -1,0 +1,39 @@
+{
+    "trainRoutes": [
+      {
+        "trainNumber": "12301",
+        "source": "Mumbai",
+        "destination": "Delhi",
+        "departureTime": "08:00 AM",
+        "arrivalTime": "05:00 PM",
+        "stops": ["Vadodara", "Ahmedabad", "Jaipur", "Agra"],
+        "availableSeats": {
+          "All classes": 150,
+          "Second Sitting(2S)": 50,
+          "AC 3 Tier(3A)": 80,
+          "AC Chair Car(CC)": 60,
+          "Exec. Chair Car(Ec)": 30
+        },
+        "categories": ["GENERAL", "LADIES", "LOWER BERTH/SR. CITIZEN", "PERSON WITH DISABILITY", "DUTY PASS", "TATKAL"],
+        "date": "2024-1-1"
+      },
+      {
+        "trainNumber": "22642",
+        "source": "Chennai",
+        "destination": "Kolkata",
+        "departureTime": "09:30 AM",
+        "arrivalTime": "07:45 PM",
+        "stops": ["Vijayawada", "Bhubaneswar", "Ranchi", "Asansol"],
+        "availableSeats": {
+          "All classes": 100,
+          "Second Sitting(2S)": 30,
+          "AC 3 Tier(3A)": 50,
+          "AC Chair Car(CC)": 40,
+          "Exec. Chair Car(Ec)": 20
+        },
+        "categories": ["GENERAL", "LADIES", "LOWER BERTH/SR. CITIZEN", "PERSON WITH DISABILITY", "DUTY PASS", "TATKAL"],
+        "date": "2022-12-16"
+    }
+    ]
+  }
+  
