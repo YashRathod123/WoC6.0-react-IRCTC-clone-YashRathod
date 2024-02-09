@@ -20,7 +20,7 @@ function SignUp() {
   async function handlechange() {
     if (username && password && email) {
       try {
-        await fetch("http://localhost:8000/signup", {
+        await fetch("https://woc-yash-server.onrender.com/signup", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
