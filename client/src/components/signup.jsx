@@ -18,7 +18,7 @@ function SignUp() {
     if (username && password && email) {
       try {
         localStorage.removeItem("token");
-        await fetch("https://woc-yash-server.onrender.com/signup", {
+        await fetch("https://server-woc.onrender.com/signup", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
