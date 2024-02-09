@@ -23,7 +23,7 @@ function PayDetails({ log, tid }) {
       country,
     });
     try {
-      const response = await fetch("https://woc-yash-server.onrender.com//book", {
+      const response = await fetch("https://woc-yash-server.onrender.com/book", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
