@@ -7,7 +7,7 @@ import {
   Route,
   Navigate,
 } from "react-router-dom";
-import { jwtDecode } from "jwt-decode";
+// import { jwtDecode } from "jwt-decode";
 import Booklist from "./Booklist";
 
 function App() {
@@ -28,8 +28,8 @@ function ProtectedRoute() {
   if (!token) {
     return <Navigate to="/" />;
   } else {
-    const user = jwtDecode(token);
-    console.log(user);
+    // const user = jwtDecode(token);
+    // console.log(user);
 
     // localStorage.removeItem('token');
     return <Home />;
