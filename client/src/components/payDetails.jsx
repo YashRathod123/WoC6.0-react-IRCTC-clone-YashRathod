@@ -11,7 +11,6 @@ function PayDetails({ log, tid }) {
   const [showpay, setShowpay] = useState(true);
   const navigate = useNavigate();
 
-
   async function handlePaymentSubmit() {
     console.log(log);
     console.log(tid);
