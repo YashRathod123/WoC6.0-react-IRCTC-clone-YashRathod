@@ -25,7 +25,7 @@ function Home() {
   async function handleSearch() {
     try {
       console.log(date);
-      const response = await fetch("https://server-woc.onrender.comsearch", {
+      const response = await fetch("https://server-woc.onrender.com/search", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
