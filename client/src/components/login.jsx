@@ -12,7 +12,7 @@ const Login = () => {
 
   async function handleLogin() {
     try {
-      const response = await fetch("https://woc-yash-server.onrender.com/login", {
+      const response = await fetch("https://server-woc.onrender.com/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
