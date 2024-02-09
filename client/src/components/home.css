@@ -1,39 +1,60 @@
-
 .container {
-    margin: 0 auto;
-    width:100%;
-    
-  }
-  .img{
-    
-  }
+  margin: 0 auto;
+  width: 100%;
+}
 
-  .nav {
-    background-color: #007bff; /* Set your desired background color */
-    padding: 10px;
-    border-radius: 5px;
-    flex-direction: row;
-    display: flex;
-  }
-  
-  .nav-item {
-    /* display: inline-block; */
-    margin-right: 10px;
-    display: flex;
-    justify-content: right;
-  }
-  
-  .nav-link {
-    color: #fff; /* Set your desired text color */
-    text-decoration: none;
-    padding: 5px 10px;
-    border-radius: 3px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .nav-link:hover {
-    background-color: #0056b3; /* Set your desired hover color */
-  }
+.nav {
+  background-color: #E74C3C; /* Set your desired background color */
+  padding: 10px;
+  border-radius: 5px;
+  flex-direction: row;
+  display: flex;
+}
 
-  
-  
+.nav-item {
+  /* display: inline-block; */
+  margin-right: 10px;
+  display: flex;
+  justify-content: right;
+}
+
+.nav-link {
+  color: #fff; /* Set your desired text color */
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+.nav-center {
+  font-weight: 900;
+  flex-grow: 1; 
+  text-align: center;
+}
+
+.logout {
+  margin-right: 0; /* Remove default margin for the logout link */
+}
+
+.nav-link:hover {
+  background-color: #0056b3; /* Set your desired hover color */
+}
+
+.from-to {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.from-to input {
+  margin-right: 40px;
+  margin-left: 10px;
+  box-shadow: black 1px 0.5px 3px;
+}
+
+.search{
+
+  height: 30px;
+  color: #fff;
+  background-color: #000;
+  border-radius: 5px;
+}
