@@ -14,7 +14,7 @@ function SignUp() {
   const [email, setEmail] = useState("");
   const navigate = useNavigate();
   const [loading, setloading] = useState(false);
-  
+    
   async function handlechange() {
         setloading(true);
 
@@ -86,7 +86,7 @@ function SignUp() {
           onKeyDown={handleKeyPress}
         />
         <br />
-        <Button onClick={handlechange}>Sign{loading && "ing"} up{loading && "ing"}</Button>
+        <Button onClick={handlechange}>Sign{loading && "ing"} up{loading && ".."}</Button>
 
         <br />
         <br />
