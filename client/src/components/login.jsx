@@ -80,7 +80,7 @@ const Login = () => {
           />
         </div>
         <button type="button" onClick={handleLogin}>
-          Login{loading && "ing.."}
+          Login{loading && ".."}
         </button>
         <div>
         <br />
