@@ -7,10 +7,11 @@ const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [redirectToSignUp, setRedirectToSignUp] = useState(false);
- 
+  const [loading, setloading] = useState(false);
   const navigate = useNavigate();
 
   async function handleLogin() {
+    setloading(true);
     try {
       const response = await fetch("https://server-woc.onrender.com/login", {
         method: "POST",
@@ -31,11 +32,14 @@ const Login = () => {
         localStorage.setItem("username", data.username);
 
         navigate("/home");
+         setloading(false);
       } else {
+         setloading(false);
         console.error("Authentication failed:", data.message);
         alert("Check your password or username or signup");
       }
     } catch (error) {
+       setloading(false);
       console.error("Error during login:", error);
     }
   }
@@ -76,7 +80,7 @@ const Login = () => {
           />
         </div>
         <button type="button" onClick={handleLogin}>
-          Login
+          Login{loading && "ing.."}
         </button>
         <div>
         <br />
