@@ -45,6 +45,13 @@ function SignUp() {
     console.error("Error navigating", error);
   }
 
+  function handleKeyPress(event){
+    if(event.key==="Enter"){
+      event.preventDefault();
+      handlechange();
+    }
+  }
+
   return (
     <>
       <Card className="container signup">
@@ -67,6 +74,7 @@ function SignUp() {
           type="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
+          onKeyDown={handleKeyPress}
         />
         <br />
         <Button onClick={handlechange}>Sign up</Button>
