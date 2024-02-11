@@ -10,7 +10,9 @@
   flex-direction: row;
   display: flex;
 }
-
+body{
+  padding: 10px;
+}
 .nav-item {
   /* display: inline-block; */
   margin-right: 10px;
