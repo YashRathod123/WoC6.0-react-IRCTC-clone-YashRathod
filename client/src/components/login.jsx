@@ -48,6 +48,12 @@ const Login = () => {
   if (redirectToSignUp) {
     return <SignUp />;
   }
+  function handleKeyPress(event){
+    if(event.key==="Enter"){
+      event.preventDefault();
+      handleLogin();
+    }
+  }
 
   return (
     <div className="container">
@@ -66,6 +72,7 @@ const Login = () => {
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
+            onKeyDown={handleKeyPress}
           />
         </div>
         <button type="button" onClick={handleLogin}>
