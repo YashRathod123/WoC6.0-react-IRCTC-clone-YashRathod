@@ -13,8 +13,11 @@ function SignUp() {
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
   const navigate = useNavigate();
-
+  const [loading, setloading] = useState(false);
+  
   async function handlechange() {
+        setloading(true);
+
     if (username && password && email) {
       try {
         localStorage.removeItem("token");
@@ -28,11 +31,17 @@ function SignUp() {
           
         });
         setRegistered(true);
+                setloading(false);
+
       } catch (error) {
+                setloading(false);
+
         console.error("Error posting data", error);
         alert("Error signing up");
       }
     } else {
+              setloading(false);
+
       alert("Please enter all required information");
     }
   }
@@ -77,7 +86,7 @@ function SignUp() {
           onKeyDown={handleKeyPress}
         />
         <br />
-        <Button onClick={handlechange}>Sign up</Button>
+        <Button onClick={handlechange}>Sign{loading && "ing"} up{loading && "ing"}</Button>
 
         <br />
         <br />
